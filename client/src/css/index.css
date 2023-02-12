@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b1b5b8;
+}
+
+.bullet {
+  height: 4px;
+  width: 4px;
+  background-color: black;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+  left: -4px;
+  top: -4px;
+}
+
+.shell {
+  height: 600px;
+  width: 600px;
+  background-color: #cba16f;
+  position: relative;
+}
+
+.object > li {
+  position: absolute;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 20px;
+  text-align: center;
+}
+
+.tank {
+  background-color: #25342d;
+  height: 20px;
+  width: 20px;
+  left: -30px;
+  top: -30px;
+  border: 5px solid #3a4a49;
+  box-shadow: 3px 2px 7px rgba(0, 0, 0, 0.5);
+}
+
+.barrel {
+  position: absolute;
+  height: 5px;
+  width: 15px;
+  background-color: #25342d;
+  top: 3px;
+  left: 5px;
+  transform-origin: 0px 2px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.grass li {
+  position: absolute;
+  background-color: #005C00;
+  z-index: 10;
+}
+
+.grass1{
+  left: 200px;
+  top: 275px;
+  height: 75px;
+  width: 100px;
+}
+
+.grass2{
+  left: 250px;
+  top: 250px;
+  height: 50px;
+  width: 100px;
+}
+
+.grass3{
+  left: 500px;
+  top: 0px;
+  height: 40px;
+  width: 100px;
+}
+
+.text{
+  text-align: center;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.text li{
+  margin-top: 10px;
+}
+
+.modal {
+  display: none;
+  z-index: 100;
+  position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.modal-content h1{
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  font-size: 200px;
+  font-weight: 400;
+  color: #982425;
+}
+
+.modal-content p {
+  text-align: center;
+}
+
+.modal-content a {
+  font-size: 23px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.3)
+}
+
+.latency {
+  z-index: 99px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
